@@ -17,7 +17,7 @@ import json
 #=========================
 #0.設定エリア
 #=========================
-webhook_url = "https://discordapp.com/api/webhooks/1459514443292606710/qFHNtMukyEMNJ1C2biyS6x2SYTredyt20ufwnn3sxJzhgCgU0yWc4tehIeteKuqXSoZ-"
+webhook_url = "DISCODEURL"
 
 #=========================
 #1.ロガー設定
@@ -102,7 +102,7 @@ try:
     if house_info:
         df = pd.DataFrame(house_info)
         gc = gspread.service_account("secret_key.json")
-        sh = gc.open_by_key("1Ziey5w9zArvQcv_VrEmY7_M9CnReO3rYa8GonZ6jc5Q")
+        sh = gc.open_by_key("SHEET")
         worksheet = sh.sheet1
         worksheet.clear()
         set_with_dataframe(worksheet,df)

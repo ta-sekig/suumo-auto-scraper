@@ -1,8 +1,7 @@
 import gspread
 
 gc = gspread.service_account(filename="secret_key.json")
-SPREADSHEET_KEY = "1Ziey5w9zArvQcv_VrEmY7_M9CnReO3rYa8GonZ6jc5Q"
-
+SPREADSHEET_KEY = "SHEET"
 try:
     sh = gc.open_by_key(SPREADSHEET_KEY)
     worksheet = sh.sheet1

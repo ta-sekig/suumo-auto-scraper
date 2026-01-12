@@ -17,7 +17,7 @@ from gspread_dataframe import set_with_dataframe
 #====================
 #0.設定
 #====================
-webhook_url = "https://discordapp.com/api/webhooks/1460194004699185347/AFiBcQC66KxBU3spse-YLIFruLsHLECZp8ccG0fPPyKTAM1TQwanvoAkbYYz1OBWtP2M"
+webhook_url = "DISCODEURL"
 
 #====================
 #1.EXE化設定
@@ -109,7 +109,7 @@ try:
         key_path = resource_path("secret_key.json")
         logger.info(f"鍵ファイルのパス:{key_path}")
         gc = gspread.service_account(key_path)
-        sh = gc.open_by_key("1Ziey5w9zArvQcv_VrEmY7_M9CnReO3rYa8GonZ6jc5Q")
+        sh = gc.open_by_key("SHEET")
         work_sheet = sh.sheet1
         work_sheet.clear()
         set_with_dataframe(work_sheet,df)

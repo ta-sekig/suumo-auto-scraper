@@ -18,7 +18,7 @@ stream_handler = logging.StreamHandler()
 stream_handler.setFormatter(formatter)
 logger.addHandler(stream_handler)
 
-webhook_url = "https://discordapp.com/api/webhooks/1459213911982215252/5mkjbgRfzxZsgEtF89iM213Knx83OfRh1URD3x7u0bIbaI5DTPeUimaz3sc73vScX32h"
+webhook_url = "DISCODEURL"
 
 #=====================
 #2.送信ロジック

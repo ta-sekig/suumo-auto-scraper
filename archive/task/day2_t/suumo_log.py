@@ -87,7 +87,7 @@ try:
     if house_info:
         df = pd.DataFrame(house_info)
         gc = gspread.service_account("secret_key.json")
-        sh = gc.open_by_key("1Ziey5w9zArvQcv_VrEmY7_M9CnReO3rYa8GonZ6jc5Q")
+        sh = gc.open_by_key("SHEET")
         work_sheet = sh.sheet1
         work_sheet.clear()
         set_with_dataframe(work_sheet,df)
