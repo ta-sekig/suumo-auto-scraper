@@ -1,0 +1,15 @@
+# --- 機密情報（絶対に見せてはいけない） ---
+secret_key.json
+.env
+
+# --- 不要なファイル（ゴミ） ---
+__pycache__/
+*.spec
+build/
+dist/
+*.log
+.DS_Store
+
+# --- 仮想環境（もしあれば） ---
+venv/
+.venv/
